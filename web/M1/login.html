@@ -12,11 +12,18 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" >
     </head>
     <body>
-        <header><h1>Free Peer Rewiev</h1></header>
-        <nav></nav>
+        <header>
+            <h1>Free Peer Rewiev</h1>
+        </header>
+        <nav id="sidebar1"> 
+            <ul>
+                <li>Primo Elemento</li>
+                <li>Secondo Elemento</li>
+                <li>Terzo Elemento</li>
+            </ul>
+        </nav>
         <main>
-            <article>
-                <h2>Login</h2>
+            <h2>Login </h2>
                 <form action="signin.php" method="get" id="login">
                     <label for="nome">Nome Utente</label>
                     <br/>
@@ -26,9 +33,8 @@ and open the template in the editor.
                     <br/>
                     <input type="text" name="psw" id="psw" value=" " />
                     <br/>
-                    <button id="bottone" type="button"> <a href="articol.html" >Accedi </a></button>
+                    <button id="bottoneLogin" type="button"> <a href="articoli.html" >Accedi </a></button>
                 </form>
-                </article>
         </main>
     </body>
 </html>
