@@ -10,57 +10,106 @@ and open the template in the editor.
 *{
     box-sizing: border-box;
 }
-html{
-    height:100%;
-}
-body{
+html,body{
     height: 100%;
     margin:0px;
+    padding:0px;
 }
 header{
     width: 100%;
     height: 100px;
+    background-color:#2850cb;
     border-style: solid;
-    background-color:#64f854;
 }
 nav{
     float: left;
-    width: 20%;
+    width: 15%;
     height: 100%;
-    border-style: solid;
     margin: 0px;
     padding: 0px;
+    font-size: 25px;
+    border-style: solid;
 }
 main{
-    display:inline;
-    float:left;
-    width: 80%;
+    float:right;
+    width: 85%;
     height: 100%;
-    border-style:solid;
+    border-style: solid;
 }
 .signIn{
- border:solid;
-    width: 420px;
-    height:400px;
-    font-size: 30px;
+    border-style:solid;
+    width: 400px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     position:relative;
     top:80px;
 }
+
 #nome,#psw,#bottoneLogin{
-    position: relative;
-    left: 50px;
     width:300px;
+    height:50px;
 }
 #bottoneLogin{
-    width: 200px;
-    height: 80px;
+    width: 300px;
+    height: 50px;
+    font-size: 35px;
 }
 #login{
     position: relative;
-    left:20px;
+    left:50px;
+    top:60px;
+    font-size:30px;
 }
-
-
+.signIn input{
+    font-size:25px;
+}
+#titoloLogin{
+    text-align: center;
+    position: relative;
+    top:80px;
+    font-size:40px;
+}
+h1,h2,h3{
+    font-weight: bold;
+}
+a:visited{
+    color:#021a63
+}
+table{
+    border-collapse: collapse;
+    width:85%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+    top:100px;
+}
+.intestazione{
+    background-color:aqua;
+    font-size:30px;
+}
+th,td{
+    border:solid;
+    border-color: black;
+    margin:0px;
+    padding:0px;
+}
+.riga_pari{
+    background-color:darkgray;
+}
+td{
+    text-align: center;
+    font-size: 25px;
+}
+#bottone-articolo{
+    width: 85%;
+    height: 80px;
+    position: relative;
+    top:120px;
+    left:120px;
+    font-size: 30px;
+    border-style: solid;
+    border-color: black;
+}
 

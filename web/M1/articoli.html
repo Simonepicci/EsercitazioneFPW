@@ -12,6 +12,48 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" >
     </head>
     <body>
-        <div>TODO write content</div>
+        <header>
+            <h1>Free Peer Rewiev</h1>
+        </header>
+        <nav id="sidebar1"> 
+            <a href="valutazione.html">Valutazione</a>
+        </nav>
+        <main>
+            <table>
+                <tr class="intestazione">
+                    <th>Data</th>
+                    <th>Titolo</th>
+                    <th>Stato</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>25/2/2019</td>
+                    <td>Come usare il BR</td>
+                    <td>APERTO</td>
+                    <td> <input type="image" alt="logo_matita" src="data:image/png;base64,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" width="20" height="20"/>
+                        <input type="image" alt="logo_cestino" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8AAAAQEBAwMDD6+vrCwsI5OTmzs7NJSUnc3NyVlZWSkpLk5OSGhoZzc3P09PRgYGBubm7Ozs5AQECsrKzr6+uioqIbGxuLi4vIyMhUVFRbW1smJiabm5vY2NhoaGh7e3sfHx8yMjL3Ug7yAAAE+klEQVR4nO2da3uiMBBGjaLFSxev1VZpbf//j9z26faC86IkGZjw7Hs+s7NzakjCJJDBQJ9ifMhHQ+fHcJQfxkUL2aiTjY+ebr85jjNrgVvcnSL8PjjdWStcZZpH+n2QT6016nlQ8PvgwVqkhmylJOjcKs27UaOFfpFbyyA2ioLObax1JEtVQeeW1kKXbJUFndtaK1VZqAs6t7CWqvCnBcM/1lK/aeMnTOtHPLdieLbW+iFrRdC5dMZ9rdnaJenM3kYtGY6sxb54bEnQuUdrtX/g6cwm9wLGSGRiA4eK484zSgH74zQGjDnIbBIQBzWFuXq2IaC/fUgpYo0CqWcbwB3Iaxg0kqHnrxSqNhOQ1yEoEno+CWnuyjyjthXWQexQjfVZOV9/UHEmtJNH3elKNdsAdugnDB2opyiY77CjTQlyeg2OhvqaUjHbADI0JQ2fMKN+eWT7hDFG7SoiJRRurJduAE8go3NEvAOI96SUaxBwShqz7AADWk5O79X/5Ghp7l4p2wBg9SJunqV9Y0eCplmvcelkaP3RrjiMhq/Y550ZiGm2iAEfd2KX4gsUdK2S7zvT7cyDElUe9uU8jnIPoualT2Lbut680F4+smOJWxIavfsKHLLaqwlagB5vUCfWX2bAsI0FMjvQ0hwN+wUN+w8N+w8N+8//adjWdgMbUM0WLrH0Frig0862HxvOSHAwgI/XfWRfu9ZRLKa/Wci617B6hQULucp4usi7ea3oTRo2/rftIQ3fgmPJhaU0DcP3TtHQBhr6QEMbaOgDDW2goQ80tIGGPtDQBhr6QEMbaOgDDW2goQ80tIGGPtDwi/Xs/puybi9osT18X3TY1i0trMufUDMcqnvDy+/SvMB90ONqYkP4FkX2Ug0Fv1PTvaHYsH8GF8nXDNA7BmIJE23T79wQbFsGyctdAmClHbxtAVpz54ZgXyrY3Cm354JNrs1CdW4I3saS91gm3zSdyHsMvGwB3t6gIQ1pSEMa0pCGNKQhDWlIQxrSkIY0pCENaUhDGtKQhjSkIQ1pSEMa0pCGNKQhDWlIQxrSkIY0pCENaUhDGtKQhjSkIQ1pSEMa0pCGNKQhDWlIQxrSkIY0pCENaUhDGtKQhjSkoaKhPP550xtD8AkycJzUi7joRV4EDtUCH0br/ot04sykE7hIHlKOjhNvFKp7Q3E8N/zc4eUH2+CZxI1CGXwZclq5yTY1p2LPK4FqjmBvEsrm656Lb66EK74vunao1s1Q/H6pDzS0gYY+0NAGGvpAQxto6AMNbaChDzS0gYY+SEOnmGkoMqm34FhvPTGcBMeSZVwHz67olEwmtQkOJsu4qBTaMaCoCut2jVjKYA+KuYbxIJMCR2U0RJw+4lyumGsYuUyqDA4mC9XO7RSTDWEHcoJn1jQCnBniDorZhnAAOV0r0l4HdFtuaPsj7uR4HzWEoXBgzahD5BqWc8eIeKCrqV1y6IQ5SgitYjUF3YjvU4jcCjAFcXGdX4aaaWrENNKaZpoYYCHcg6l1+rd5vbZU1wAwcUuM8AnNJ2CemxjRTzur2/+HKTFDxSfgaLyUCH+8/wHsCEqImm0RfqTcTnUeVwtQkEoErTkyeiRLgvAK1CWJjvuTyLG+opji/HSjKDgYLPCs3pKldmFTHGRrTOxkDfAMilxmLMNLM9dYoxKCBav26tLZeHYc7Q3d9qNl+eh3A/4F492IozJnBUIAAAAASUVORK5CYII=" width="20" height="20"/>
+                    </td>
+                </tr>
+                <tr class="riga_pari">
+                    <td>7/1/2019</td>
+                    <td>Box Model</td>
+                    <td>VALUTAZIONE</td>
+                    <td><input type="image" alt="logo_cestino" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEX///8AAAAQEBAwMDD6+vrCwsI5OTmzs7NJSUnc3NyVlZWSkpLk5OSGhoZzc3P09PRgYGBubm7Ozs5AQECsrKzr6+uioqIbGxuLi4vIyMhUVFRbW1smJiabm5vY2NhoaGh7e3sfHx8yMjL3Ug7yAAAE+klEQVR4nO2da3uiMBBGjaLFSxev1VZpbf//j9z26faC86IkGZjw7Hs+s7NzakjCJJDBQJ9ifMhHQ+fHcJQfxkUL2aiTjY+ebr85jjNrgVvcnSL8PjjdWStcZZpH+n2QT6016nlQ8PvgwVqkhmylJOjcKs27UaOFfpFbyyA2ioLObax1JEtVQeeW1kKXbJUFndtaK1VZqAs6t7CWqvCnBcM/1lK/aeMnTOtHPLdieLbW+iFrRdC5dMZ9rdnaJenM3kYtGY6sxb54bEnQuUdrtX/g6cwm9wLGSGRiA4eK484zSgH74zQGjDnIbBIQBzWFuXq2IaC/fUgpYo0CqWcbwB3Iaxg0kqHnrxSqNhOQ1yEoEno+CWnuyjyjthXWQexQjfVZOV9/UHEmtJNH3elKNdsAdugnDB2opyiY77CjTQlyeg2OhvqaUjHbADI0JQ2fMKN+eWT7hDFG7SoiJRRurJduAE8go3NEvAOI96SUaxBwShqz7AADWk5O79X/5Ghp7l4p2wBg9SJunqV9Y0eCplmvcelkaP3RrjiMhq/Y550ZiGm2iAEfd2KX4gsUdK2S7zvT7cyDElUe9uU8jnIPoualT2Lbut680F4+smOJWxIavfsKHLLaqwlagB5vUCfWX2bAsI0FMjvQ0hwN+wUN+w8N+w8N+8//adjWdgMbUM0WLrH0Frig0862HxvOSHAwgI/XfWRfu9ZRLKa/Wci617B6hQULucp4usi7ea3oTRo2/rftIQ3fgmPJhaU0DcP3TtHQBhr6QEMbaOgDDW2goQ80tIGGPtDQBhr6QEMbaOgDDW2goQ80tIGGPtDwi/Xs/puybi9osT18X3TY1i0trMufUDMcqnvDy+/SvMB90ONqYkP4FkX2Ug0Fv1PTvaHYsH8GF8nXDNA7BmIJE23T79wQbFsGyctdAmClHbxtAVpz54ZgXyrY3Cm354JNrs1CdW4I3saS91gm3zSdyHsMvGwB3t6gIQ1pSEMa0pCGNKQhDWlIQxrSkIY0pCENaUhDGtKQhjSkIQ1pSEMa0pCGNKQhDWlIQxrSkIY0pCENaUhDGtKQhjSkIQ1pSEMa0pCGNKQhDWlIQxrSkIY0pCENaUhDGtKQhjSkoaKhPP550xtD8AkycJzUi7joRV4EDtUCH0br/ot04sykE7hIHlKOjhNvFKp7Q3E8N/zc4eUH2+CZxI1CGXwZclq5yTY1p2LPK4FqjmBvEsrm656Lb66EK74vunao1s1Q/H6pDzS0gYY+0NAGGvpAQxto6AMNbaChDzS0gYY+SEOnmGkoMqm34FhvPTGcBMeSZVwHz67olEwmtQkOJsu4qBTaMaCoCut2jVjKYA+KuYbxIJMCR2U0RJw+4lyumGsYuUyqDA4mC9XO7RSTDWEHcoJn1jQCnBniDorZhnAAOV0r0l4HdFtuaPsj7uR4HzWEoXBgzahD5BqWc8eIeKCrqV1y6IQ5SgitYjUF3YjvU4jcCjAFcXGdX4aaaWrENNKaZpoYYCHcg6l1+rd5vbZU1wAwcUuM8AnNJ2CemxjRTzur2/+HKTFDxSfgaLyUCH+8/wHsCEqImm0RfqTcTnUeVwtQkEoErTkyeiRLgvAK1CWJjvuTyLG+opji/HSjKDgYLPCs3pKldmFTHGRrTOxkDfAMilxmLMNLM9dYoxKCBav26tLZeHYc7Q3d9qNl+eh3A/4F492IozJnBUIAAAAASUVORK5CYII=" width="20" height="20"/></td>
+                </tr>
+                <tr>
+                    <td>11/12/2018</td>
+                    <td>Ajax per Filtri</td>
+                    <td>ACCETTATO</td>
+                    <td></td>
+                </tr>
+                <tr class="riga_pari">
+                    <td>5/8/2017</td>
+                    <td>Rami Malek vince l'Oscar</td>
+                    <td>RIFIUTATO</td>
+                    <td></td>
+                </tr>
+            </table>
+             <button id="bottone-articolo" type="button"> <a href="scriviArticolo.html" >Nuovo Articolo</a></button>
+        </main>
     </body>
 </html>

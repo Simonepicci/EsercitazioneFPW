@@ -12,6 +12,42 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" >
     </head>
     <body>
-        <div>TODO write content</div>
+        <header>
+            <h1>Free Peer Rewiev</h1>
+        </header>
+        <nav id="sidebar1"> 
+            <a href="valutazione.html">Valutazione</a>
+        </nav>
+        <main>
+            <h1>Scrivi Articolo</h1>
+            <div class="form_articolo">
+            <form action="ptova.php" method="get" >
+                <label for="titolo">Titolo</label><input type="text" name="titolo" id="id_titolo">
+                <br>
+                <label for="autori">Autori</label><input type="text" name="autore" id="autore">
+                <br>
+                <label for="categorie">Categorie</label>
+                    <input type="checkbox" name="categoria" value="Html">HTML
+                    <input type="checkbox" name="categoria" value="Jsp">JSP
+                    <br>
+                    <input type="checkbox" name="categoria" value="Css">CSS
+                    <input type="checkbox" name="categoria" value="Javascript">JavaScript
+                    <br>
+                    <input type="checkbox" name="categoria" value="Servlet">Servlet
+                    <input type="checkbox" name="categoria" value="Ajax">AJAX
+                    <br>
+
+                    <label for="immagine">Immagine</label>
+                    <input type="url" name="immagine">
+                    <br>
+                    <label for="data">Data</label>
+                    <input type="date" name="data">
+                    <br>
+                    <label for="Testo">Testo</label>
+                    <textarea rows="4" cols="20" name="testo">
+                    </textarea>    
+            </form>
+            </div>
+        </main>
     </body>
 </html>

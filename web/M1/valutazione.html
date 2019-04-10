@@ -12,6 +12,62 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" >
     </head>
     <body>
-        <div>TODO write content</div>
+       <header>
+            <h1>Free Peer Rewiev</h1>
+        </header>
+        <nav id="sidebar1"> 
+            <a href="valutazione.html">Valutazione</a>
+        </nav>
+        <main>
+            <h1>Serie A, le probabili formazioni della 31ª giornata di campionato</h1>
+            <p>Simone Picci</p>
+            <img title="logo" alt="pallone" src="https://4.bp.blogspot.com/-YtZT3z7b1F8/W1BiBRh3PBI/AAAAAAAAhwk/XFN7HUYUTNYypJJK_nwYzk9UyutU4egNgCLcBGAs/s1600/nike%2Bmerlin%2Bpallone%2Bseri%2Bea.jpg" width="330" height="200">
+            <h2>Categorie</h2>
+                <select name="lista" size="5">
+                <option value="val1">HTML</option>
+                <option value="val2">CSS</option>
+                <option value="val3">SERVLET</option>
+                <option value="val4">JSP</option>
+                <option value="val5">JAVASCRIPT</option>
+                <option value="val6">AJAX</option>
+               </select>
+            <p>Data:06/04/2019</p>
+            <br>
+            <p>Senza un attimo di respiro. Si è appena conclusa la 30ª giornata di Serie A, 
+                ma oggi si è tornati in campo! Parma-Torino alle 15 ha aperto questo turno, 
+                poi ecco la super sfida tra Juve e Milan alle 18 e Samp-Roma alle 20. Sei le 
+                gare della domenica tra cui Fiorentina-Frosinone all'ora di pranzo, Udinese-Empoli 
+                alle 15 e Inter-Atalanta alle 18 e Napoli-Genoa alle 20.30. Ecco le ultimissime dai 
+                campi.
+            </p>
+            <br>
+            <h2>Valutazione</h2>
+            <form action="" method="get">
+                <p>
+                <label for="1">1</label>
+                <input type="radio" name="1" id="1" value="1">
+                <label for="2">2</label>
+                <input type="radio" name="2" id="2" value="2">
+                <label for="3">3</label>
+                <input type="radio" name="3" id="3" value="3">
+                <label for="4">4</label>
+                <input type="radio" name="4" id="4" value="4">
+                <label for="5">5</label>
+                <input type="radio" name="5" id="5" value="5">
+                </p>
+            </form>
+                <form action="signin.php" method="get">
+                    <label for="comm_autori">Commenti per gli autori</label>
+                    <br/>
+                    <input type="text" name="comm_autori" id="comm_autori" value=" " />
+                    <br/>
+                    <label for="comm_organizzatori">Commenti per gli organizzatori</label>
+                    <br/>
+                    <input type="text" name="comm_organizzatori" id="comm_organizzatori" value=" " />
+                    <br/>
+                    <br/>
+                    <button id="bottoneInvia" type="button">Invia</button>
+                </form>
+        </main>
     </body>
 </html>
