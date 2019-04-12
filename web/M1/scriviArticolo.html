@@ -21,32 +21,47 @@ and open the template in the editor.
         <main>
             <h1>Scrivi Articolo</h1>
             <div class="form_articolo">
-            <form action="ptova.php" method="get" >
-                <label for="titolo">Titolo</label><input type="text" name="titolo" id="id_titolo">
-                <br>
-                <label for="autori">Autori</label><input type="text" name="autore" id="autore">
-                <br>
-                <label for="categorie">Categorie</label>
+            <form action="prova.php" method="get" >
+                <label for="titolo">Titolo</label>
+                <div id="id_titolo"> 
+                    <input type="text" name="titolo">
+                </div> 
+                <br/>
+                
+                <label for="autori">Autori</label>
+                <div id="autori">
+                <p>Simone Picci</p>
+                </div>
+                <div id="id_autore"> 
+                <input type="text" name="autore">
+                </div>
+                <br/>             
+                    <label for="categorie">Categorie</label>
+                    <div id="blocco_categorie"> 
                     <input type="checkbox" name="categoria" value="Html">HTML
                     <input type="checkbox" name="categoria" value="Jsp">JSP
-                    <br>
                     <input type="checkbox" name="categoria" value="Css">CSS
-                    <input type="checkbox" name="categoria" value="Javascript">JavaScript
                     <br>
+                    <input type="checkbox" name="categoria" value="Javascript">JavaScript
                     <input type="checkbox" name="categoria" value="Servlet">Servlet
                     <input type="checkbox" name="categoria" value="Ajax">AJAX
+                    </div>
                     <br>
-
                     <label for="immagine">Immagine</label>
-                    <input type="url" name="immagine">
-                    <br>
+                    <div id="immagine"> 
+                        <input type="url" name="immagine">
+                    </div>
+                    <br/>
                     <label for="data">Data</label>
+                    <div id="id_data">
                     <input type="date" name="data">
-                    <br>
-                    <label for="Testo">Testo</label>
-                    <textarea rows="4" cols="20" name="testo">
-                    </textarea>    
+                    </div>
+                    <br/>
+                    <div id="testo">
+                    <label for="Testo">Testo</label><textarea rows="16" cols="40" name="testo"></textarea> 
+                    </div>
             </form>
+                <button id="bottoneInvia" type="button">Salva</button>
             </div>
         </main>
     </body>

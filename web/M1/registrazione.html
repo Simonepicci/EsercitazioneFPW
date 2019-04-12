@@ -12,6 +12,43 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" >
     </head>
     <body>
-        <div>TODO write content</div>
+        <header>
+            <h1>Free Peer Rewiev</h1>
+        </header>
+        <nav id="sidebar1"> 
+            <a href="valutazione.html">Valutazione</a>
+        </nav>
+        <main>
+            <div id="logo_titolo">
+                <h1>Profilo</h1>
+            </div>
+            <br/>
+            <div class="form_signup">
+            <form action="signup.php" method="get" id="signup">
+                <label for="nome_signup">Nome</label>
+                <input type="text" name="nome_signup" id="nome_signup" value=" "/>
+                <br/>
+                <label for="cognome_signup">Cognome</label>
+                <input type="text" name="cognome_signup" id="cognome_signup" value=" "/>
+                <br/>
+                <label for="foto_signup">Foto</label>
+                <input type="url" name="foto_signup" id="foto_signup" value=" "/>
+                <br />
+                <label for="email_signup">Email</label>
+                <input type="email" name="email_signup" id="email_signup" value=" "/>
+                <br />
+                <label for="psw_signup">Password</label>
+                <input type="password" name="psw_signup" id="psw_signup" value=" "/>
+                <br />
+                <label for="ente_signup">Ente</label>
+                <input type="url" name="ente_signup" id="ente_signup" value=" "/>
+                <br />
+                <button id="bottoneSalva" type="button">Salva</button>
+                <br />
+                <a href="" id="cancella">Cancellati</a>
+            </form>
+            </div>
+
+        </main>
     </body>
 </html>
