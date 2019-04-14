@@ -10,6 +10,9 @@ and open the template in the editor.
 *{
     box-sizing: border-box;
 }
+font{
+
+}
 html,body{
     height: 100%;
     margin:0px;
@@ -20,10 +23,12 @@ header{
     height: 100px;
     background-color:#201d1d;
     border-style: solid;
+    border-color: black;
     display: inline;
     float: left;
     margin: 0px;
     padding: 0px;
+    color:#c6c4c4;
 }
 nav{
     float: left;
@@ -33,23 +38,41 @@ nav{
     padding: 0px;
     font-size: 25px;
     border-style: solid;
+    border-color: black;
     background-color:#0a0909;
+    color:#c6c4c4;
 }
 main{
     float:right;
     width: 80%;
     height: 100%;
     border-style: solid;
+    border-color: black;
     background-color:#201d1d;
+    color:#c6c4c4;
 }
+a{
+    text-decoration: none;
+}
+a:link{
+    color:#c6c4c4;
+}
+a:visited{
+    color:#c6c4c4;
+}
+a:hover{
+    color:white;
+}
+
 .signIn{
     border-style:solid;
+    border-color: black;
     width: 400px;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
     position:relative;
-    top:80px;
+    top:60px;
 }
 
 #nome,#psw,#bottoneLogin{
@@ -71,14 +94,14 @@ main{
 #titoloLogin{
     text-align: center;
     position: relative;
-    top:80px;
-    font-size:40px;
+    top:60px;
+    font-size:50px;
 }
 h1,h2,h3{
     font-weight: bold;
 }
-a:visited{
-    color:#021a63
+h1{
+    font-size: 45px;
 }
 table{
     border-collapse: collapse;
@@ -90,7 +113,7 @@ table{
     top:100px;
 }
 .intestazione{
-    background-color:aqua;
+    background-color:#525151;
     font-size:30px;
 }
 th,td{
@@ -100,22 +123,23 @@ th,td{
     padding:0px;
 }
 .riga_pari{
-    background-color:darkgray;
+    background-color:#808080;
 }
 td{
     text-align: center;
     font-size: 25px;
 }
+
 #bottone-articolo{
     width: 85%;
     height: 80px;
     position: relative;
     top:120px;
-    margin-left: auto;
-    margin-right: auto;
+    left:90px;
     font-size: 30px;
     border-style: solid;
     border-color: black;
+
 }
 .form_articolo{
     height: 600px;
@@ -133,7 +157,11 @@ td{
     float:left;
     width: 150px;
 }
-#id_titolo,#immagine,#id_data,#blocco_categorie{
+#scriviArticolo{
+    text-align: center;
+    
+}
+#titolo,#immagine,#id_data,#blocco_categorie{
     position: relative;
     left:20px;
 }
@@ -155,10 +183,10 @@ td{
 #immagine input{
     width: 400px;
 }
-#id_autore input{
+#id_autore{
     width: 400px;
 }
-#id_titolo input{
+#titolo{
     width: 400px;
 }
 #id_data input{
@@ -176,7 +204,6 @@ td{
     font-size: 25px;
     position: relative;
     left:20px;
-
 }
 #autori p{
         margin:0;
@@ -185,6 +212,7 @@ td{
     width:800px;
     height: 400px;
     border-style:solid;
+        border-color: black;
     font-size:35px;
     margin-right:auto;
     margin-left: auto;
@@ -204,7 +232,8 @@ td{
 #bottoneSalva{
     width: 680px;
     height: 40px;
-
+    font-size: 25px;
+    text-align: center;
 }
 #signup{
     position: relative;
@@ -220,7 +249,6 @@ td{
     font-size: 20px;
 }
 #logo_titolo h1{
-    font-size: 45px;
     text-align: center;
 }
 #div-menu ul{ 
@@ -256,6 +284,10 @@ td{
     list-style-type: none;
 }
 #bottoneLogout{
-    width: 100px;
+    width: 160px;
     height: 30px;
+    position: relative;
+    bottom: 30px;
+    border-style: solid;
+    border-color: black;
 }
