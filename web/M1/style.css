@@ -150,6 +150,7 @@ td{
 
 .form_articolo input{
     height: 30px;
+    width: 20px;
 }
 .form_articolo label{
     display:block;
@@ -159,38 +160,39 @@ td{
 }
 #scriviArticolo{
     text-align: center;
-    
 }
+
 #titolo,#immagine,#id_data,#blocco_categorie{
     position: relative;
     left:20px;
 }
-
 #testo label textarea{
     float:left;
 }
 #testo textarea{
     position: relative;
     left:20px;
-    width: 400px;
+    width: 432px;
 }
 #bottoneInvia{
     position: relative;
     left:170px;
-    width: 400px;
-    height: 50px;  
+    width: 432px;
+    height: 30px;  
+    font-size:25px;
+    text-align: center;
 }
 #immagine input{
-    width: 400px;
+    width: 432px;
 }
 #id_autore{
-    width: 400px;
+    width: 432px;
 }
 #titolo{
-    width: 400px;
+   width: 432px;
 }
 #id_data input{
-    width: 400px;
+    width: 432px;
 }
 #blocco_categorie input{
     width: 20px;
@@ -291,3 +293,18 @@ td{
     border-style: solid;
     border-color: black;
 }
+#titoloValutazione{
+    text-align: center;
+    position: relative;
+    bottom:30px;
+}
+.articolo{
+    height: 100%;
+    position: relative;
+    bottom:70px;
+}
+#listaAutori{
+    list-style-type: none;
+    padding:0px;
+}
+#comm_autori,#comm_organizza

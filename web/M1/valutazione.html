@@ -40,27 +40,28 @@ and open the template in the editor.
             </ul>
         </nav>
         <main>
-            <div class="valutazione">
-            <h1>Serie A, le probabili formazioni della 31ª giornata di campionato</h1>
-            <p>Simone Picci</p>
-            <img title="logo" alt="pallone" src="https://4.bp.blogspot.com/-YtZT3z7b1F8/W1BiBRh3PBI/AAAAAAAAhwk/XFN7HUYUTNYypJJK_nwYzk9UyutU4egNgCLcBGAs/s1600/nike%2Bmerlin%2Bpallone%2Bseri%2Bea.jpg" width="330" height="200">
+            <h1 id="titoloValutazione">Record Store Day</h1>
+            <div class="articolo">
+            <ul id="listaAutori">
+                <li>Simone Picci</li>
+            </ul>
+                <p>Data:14/04/2019</p>
+            <img title="logo" alt="pallone" src="https://www.ilmessaggero.it/photos/MED/75/09/4427509_1129_vinili.jpg" width="330" height="200">
             <h2>Categorie</h2>
-                <select name="lista" size="5">
-                <option value="val1">HTML</option>
-                <option value="val2">CSS</option>
-                <option value="val3">SERVLET</option>
-                <option value="val4">JSP</option>
-                <option value="val5">JAVASCRIPT</option>
-                <option value="val6">AJAX</option>
-               </select>
-            <p>Data:06/04/2019</p>
-            <p>Senza un attimo di respiro. Si è appena conclusa la 30ª giornata di Serie A, 
-                ma oggi si è tornati in campo! Parma-Torino alle 15 ha aperto questo turno, 
-                poi ecco la super sfida tra Juve e Milan alle 18 e Samp-Roma alle 20. Sei le 
-                gare della domenica tra cui Fiorentina-Frosinone all'ora di pranzo, Udinese-Empoli 
-                alle 15 e Inter-Atalanta alle 18 e Napoli-Genoa alle 20.30. Ecco le ultimissime dai 
-                campi.
-            </p>
+                <p>
+                <input type="checkbox" name="categoria" value="Linguaggio">HTML
+                <input type="checkbox" name="categoria" value="Linguaggio">CSS
+                <input type="checkbox" name="categoria" value="Linguaggio">SERVLET
+                <input type="checkbox" name="categoria" value="Linguaggio">JSP
+                <input type="checkbox" name="categoria" value="Linguaggio">Javascript
+                <input type="checkbox" name="categoria" value="Linguaggio">AJAX
+                </p>
+                <p>Non è esattamente una specie in via d'estinzione, diciamo un bel pezzo di aristocrazia musicale da mostrare con 
+                    orgoglio agli amici in salotto. Il 14 aprile sarà il Record Store Day, in sintesi la giornata mondiale dei negozi 
+                    di dischi. Il vinile resiste e lotta ancora insieme a noi, il problema - serio - è legato proprio ai negozi di dischi. 
+                    L'idea di lanciare un messaggio per sensibilizzare alla salvaguardia di queste botteghe musicali, 
+                    nasce nel 2007 negli Stati Uniti da Chris Brown, impiegato di negozio di dischi.</p>
+            <div id="valutazione">
             <h2>Valutazione</h2>
             <form action="signin.php" method="get">
                 <p>
@@ -84,8 +85,9 @@ and open the template in the editor.
                     <input type="text" name="comm_organizzatori" id="comm_organizzatori" value=" " />
                     <br/>
                     <br/>
-                    <button id="bottoneInvia" type="button">Invia</button>
+                    <button id="bottoneSalva2" type="button">Invia</button>
                 </form>
+            </div>
             </div>
         </main>
     </body>
