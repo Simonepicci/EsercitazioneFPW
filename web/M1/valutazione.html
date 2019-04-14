@@ -12,11 +12,32 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" >
     </head>
     <body>
-       <header>
-            <h1>Free Peer Rewiev</h1>
+        <header>    
+            <div id="div-menu">
+                <h1>Free Peer Rewiev</h1>
+                <ul>     
+                    <li><a href="articoli.html">Articoli</a></li>
+                    <li><a href="valutazione.html">Valutazione</a></li>
+                    <li><a href="registrazione.html">Profilo</a></li>
+                </ul>
+            </div>
         </header>
         <nav id="sidebar1"> 
-            <a href="valutazione.html">Valutazione</a>
+            <ul id="benvenuto">
+                <li><h3>Ciao,Simone</h3></li>
+                <li><button id="bottoneLogout" type="button">Logout</button></li>
+            </ul>
+            <ul id="articoli">
+                <li><h3>I miei articoli</h3></li>
+                <li>Come usare il box model</li>
+                <li>Box model</li>
+                <li>Ajax per filtri</li>
+            </ul>
+            <ul id="daValutare">
+                <li><h3>Da valutare</h3></li>
+                <li>SQL Injection</li>
+                <li>Allineare DIV</li>
+            </ul>
         </nav>
         <main>
             <div class="valutazione">
@@ -41,7 +62,7 @@ and open the template in the editor.
                 campi.
             </p>
             <h2>Valutazione</h2>
-            <form action="" method="get">
+            <form action="signin.php" method="get">
                 <p>
                 <label for="1">1</label>
                 <input type="radio" name="1" id="1" value="1">
@@ -54,8 +75,6 @@ and open the template in the editor.
                 <label for="5">5</label>
                 <input type="radio" name="5" id="5" value="5">
                 </p>
-            </form>
-                <form action="signin.php" method="get">
                     <label for="comm_autori">Commenti per gli autori</label>
                     <br/>
                     <input type="text" name="comm_autori" id="comm_autori" value=" " />

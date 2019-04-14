@@ -12,11 +12,32 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" >
     </head>
     <body>
-        <header>
-            <h1>Free Peer Rewiev</h1>
+        <header>    
+            <div id="div-menu">
+                <h1>Free Peer Rewiev</h1>
+                <ul>     
+                    <li><a href="articoli.html">Articoli</a></li>
+                    <li><a href="valutazione.html">Valutazione</a></li>
+                    <li><a href="registrazione.html">Profilo</a></li>
+                </ul>
+            </div>
         </header>
         <nav id="sidebar1"> 
-            <a href="valutazione.html">Valutazione</a>
+            <ul id="benvenuto">
+                <li><h3>Ciao,Simone</h3></li>
+                <li><button id="bottoneLogout" type="button">Logout</button></li>
+            </ul>
+            <ul id="articoli">
+                <li><h3>I miei articoli</h3></li>
+                <li>Come usare il box model</li>
+                <li>Box model</li>
+                <li>Ajax per filtri</li>
+            </ul>
+            <ul id="daValutare">
+                <li><h3>Da valutare</h3></li>
+                <li>SQL Injection</li>
+                <li>Allineare DIV</li>
+            </ul>
         </nav>
         <main>
             <h1 id="titoloLogin">Login </h1>
@@ -31,7 +52,7 @@ and open the template in the editor.
                     <input type="text" name="psw" id="psw" value=" " />
                     <br/>
                     <br/>
-                    <button id="bottoneLogin" type="button"> <a href="articoli.html" >Accedi </a></button>
+                    <input id="bottoneLogin" type="button" value="Accedi" onclick="location.href='articoli.html'">
                 </form>
             </div>
         </main>

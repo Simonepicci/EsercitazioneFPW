@@ -12,11 +12,32 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" >
     </head>
     <body>
-        <header>
-            <h1>Free Peer Rewiev</h1>
+         <header>    
+            <div id="div-menu">
+                <h1>Free Peer Rewiev</h1>
+                <ul>     
+                    <li><a href="articoli.html">Articoli</a></li>
+                    <li><a href="valutazione.html">Valutazione</a></li>
+                    <li><a href="registrazione.html">Profilo</a></li>
+                </ul>
+            </div>
         </header>
         <nav id="sidebar1"> 
-            <a href="valutazione.html">Valutazione</a>
+            <ul id="benvenuto">
+                <li><h3>Ciao,Simone</h3></li>
+                <li><button id="bottoneLogout" type="button">Logout</button></li>
+            </ul>
+            <ul id="articoli">
+                <li><h3>I miei articoli</h3></li>
+                <li>Come usare il box model</li>
+                <li>Box model</li>
+                <li>Ajax per filtri</li>
+            </ul>
+            <ul id="daValutare">
+                <li><h3>Da valutare</h3></li>
+                <li>SQL Injection</li>
+                <li>Allineare DIV</li>
+            </ul>
         </nav>
         <main>
             <div id="logo_titolo">
@@ -26,22 +47,22 @@ and open the template in the editor.
             <div class="form_signup">
             <form action="signup.php" method="get" id="signup">
                 <label for="nome_signup">Nome</label>
-                <input type="text" name="nome_signup" id="nome_signup" value=" "/>
+                <input type="text" name="nome_signup" id="nome_signup" value="Inserire il nome"/>
                 <br/>
                 <label for="cognome_signup">Cognome</label>
-                <input type="text" name="cognome_signup" id="cognome_signup" value=" "/>
+                <input type="text" name="cognome_signup" id="cognome_signup" value="Inserire il cognome"/>
                 <br/>
                 <label for="foto_signup">Foto</label>
-                <input type="url" name="foto_signup" id="foto_signup" value=" "/>
+                <input type="url" name="foto_signup" id="foto_signup" value=""/>
                 <br />
                 <label for="email_signup">Email</label>
-                <input type="email" name="email_signup" id="email_signup" value=" "/>
+                <input type="email" name="email_signup" id="email_signup" value=""/>
                 <br />
                 <label for="psw_signup">Password</label>
-                <input type="password" name="psw_signup" id="psw_signup" value=" "/>
+                <input type="password" name="psw_signup" id="psw_signup" value="oscurato"/>
                 <br />
                 <label for="ente_signup">Ente</label>
-                <input type="url" name="ente_signup" id="ente_signup" value=" "/>
+                <input type="url" name="ente_signup" id="ente_signup" value=""/>
                 <br />
                 <button id="bottoneSalva" type="button">Salva</button>
                 <br />
