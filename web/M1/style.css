@@ -307,4 +307,6 @@ td{
     list-style-type: none;
     padding:0px;
 }
-#comm_autori,#comm_organizza
+#comm_autori,#comm_organizzatori{
+    width:432px;
+}
