@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Scrivi un articolo</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" >
@@ -22,19 +22,19 @@ and open the template in the editor.
                 </ul>
             </div>
         </header>
-        <nav id="sidebar1"> 
+           <nav id="sidebar1"> 
             <ul id="benvenuto">
-                <li><h3>Ciao,Simone</h3></li>
+                <li id="ciao_utente"><h3>Ciao,Simone</h3></li>
                 <li><button id="bottoneLogout" type="button">Logout</button></li>
             </ul>
+            <h3>I miei articoli</h3>
             <ul id="articoli">
-                <li><h3>I miei articoli</h3></li>
                 <li>Come usare il box model</li>
                 <li>Box model</li>
                 <li>Ajax per filtri</li>
             </ul>
-            <ul id="daValutare">
-                <li><h3>Da valutare</h3></li>
+            <h3>Da valutare</h3>
+            <ul id="daValutare">     
                 <li>SQL Injection</li>
                 <li>Allineare DIV</li>
             </ul>
@@ -47,16 +47,16 @@ and open the template in the editor.
                 <input type="text" name="titolo" id="titolo">
                 <br>         
                 <br>
-                <label for="autori">Autori</label>
+                <label for="autore">Autori</label>
                 <div id="autori">
                 <p>Simone Picci</p>
                 </div>
-                <input type="text" name="autore" id="id_autore">
+                <input type="text" name="autore" id="autore">
                 <br>         
                 <br>
-                    <label for="categorie">Categorie</label>
+                <label for="categorie">Categorie</label>
                     <div id="blocco_categorie"> 
-                    <input type="checkbox" name="categoria" value="Html">HTML
+                    <input type="checkbox" name="categoria" value="Html" id="categorie">HTML
                     <input type="checkbox" name="categoria" value="Jsp">JSP        
                     <input type="checkbox" name="categoria" value="Css">CSS                       
                     <input type="checkbox" name="categoria" value="Javascript">JavaScript
@@ -64,18 +64,18 @@ and open the template in the editor.
                     <input type="checkbox" name="categoria" value="Ajax">AJAX
                     </div>
                     <br>
-                    <label for="immagine">Immagine</label>
+                    <label for="foto">Immagine</label>
                     <div id="immagine"> 
-                        <input type="url" name="immagine">
+                        <input id="foto" type="url" name="immagine">
                     </div>
                     <br/>
                     <label for="data">Data</label>
                     <div id="id_data">
-                    <input type="date" name="data">
+                    <input type="date" name="data" id="data">
                     </div>
                     <br/>
                     <div id="testo">
-                    <label for="Testo">Testo</label><textarea rows="16" cols="40" name="testo"></textarea> 
+                    <label for="Testo">Testo</label><textarea rows="16" cols="40" name="testo" id="Testo"></textarea> 
                     </div>
             </form>
                 <button id="bottoneInvia" type="button">Salva</button>
